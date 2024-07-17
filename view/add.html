@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Data</title>
+</head>
+<body>
+    <h1>Insert Student Details</h1>
+    <a href="../index.php">Go back to student details</a>
+    <br/><br/>
+    <div id="msg"></div>
+    <form action="../add.php" method="post" name="form1" onsubmit="return(validate());">
+        <table width="20%" border="0">
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><input type="text" name="address"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="Submit" value="Add New Student"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
